@@ -401,6 +401,21 @@
   .row-second td { background: rgba(227,53,13,0.04); }
   .row-third td { background: transparent; color: var(--muted); }
 
+  /* MEJORES TERCEROS */
+  .terceros-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  .terceros-card {
+    width: 100%;
+    max-width: 560px;
+  }
+  .terceros-table th,
+  .terceros-table td {
+    text-align: center;
+  }
+
   /* BRACKET */
   @media (max-width: 400px) {
     .slots { grid-template-columns: repeat(5, 1fr); gap: 3px; padding: 0.5rem; }
@@ -1125,6 +1140,38 @@
 
   </div><!-- /grupos-grid -->
 
+  <!-- MEJORES TERCEROS -->
+  <div class="terceros-wrap">
+    <div class="grupo-card terceros-card">
+      <div class="grupo-title">🥉 Mejores Terceros</div>
+      <table class="grupo-table terceros-table">
+        <thead>
+          <tr>
+            <th class="col-name"></th>
+            <th>Grupo</th><th>J</th><th>G</th><th>P</th><th>PF</th><th>PC</th><th>DP</th><th>Pt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-name">Normal #4</td>
+            <td>A</td>
+            <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="col-pt">0</td>
+          </tr>
+          <tr>
+            <td class="col-name">Normal #2</td>
+            <td>B</td>
+            <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="col-pt">0</td>
+          </tr>
+          <tr>
+            <td class="col-name">Radical #5</td>
+            <td>C</td>
+            <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="col-pt">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
   <!-- LLAVES -->
   <div class="divider" style="margin-top:2.5rem;"><span>⚔ LLAVES ⚔</span></div>
 
@@ -1140,12 +1187,12 @@
 
     <!-- CUARTOS IZQUIERDA -->
     <div class="kb-match" style="left:0; top:40px;">
-      <div class="kb-team">Por determinar</div>
-      <div class="kb-team">Por determinar</div>
+      <div class="kb-team">1º Grupo A</div>
+      <div class="kb-team">2º Mejor tercero</div>
     </div>
     <div class="kb-match" style="left:0; top:140px;">
-      <div class="kb-team">Por determinar</div>
-      <div class="kb-team">Por determinar</div>
+      <div class="kb-team">2º Grupo C</div>
+      <div class="kb-team">2º Grupo B</div>
     </div>
 
     <!-- SEMIFINAL IZQUIERDA -->
@@ -1168,12 +1215,12 @@
 
     <!-- CUARTOS DERECHA -->
     <div class="kb-match" style="left:840px; top:40px;">
-      <div class="kb-team">Por determinar</div>
-      <div class="kb-team">Por determinar</div>
+      <div class="kb-team">1º Grupo B</div>
+      <div class="kb-team">Mejor Tercero</div>
     </div>
     <div class="kb-match" style="left:840px; top:140px;">
-      <div class="kb-team">Por determinar</div>
-      <div class="kb-team">Por determinar</div>
+      <div class="kb-team">1º Grupo C</div>
+      <div class="kb-team">2º Grupo A</div>
     </div>
 
     <!-- TROFEO -->
