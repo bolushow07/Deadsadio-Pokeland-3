@@ -119,10 +119,18 @@
     gap: 1.5rem;
   }
 
+  /* Si el nº de tarjetas es impar, la última queda sola: la centramos */
+  .grid > .participant-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 0.75rem);
+  }
+
   /* ========== RESPONSIVE TABLET ========== */
   @media (max-width: 820px) {
     .wrapper { max-width: 100%; }
     .grid { grid-template-columns: 1fr; }
+    .grid > .participant-card:last-child:nth-child(odd) { grid-column: auto; width: 100%; }
     .grupos-grid { grid-template-columns: 1fr; }
     .grupo-card:nth-child(3) { grid-column: auto; width: 100%; }
   }
@@ -511,7 +519,7 @@
     </svg>
 
     <h1 class="title">DEADSAFIO 3</h1>
-    <p class="subtitle">Nuzlocke · 12 entrenadores · 10 Pokémon cada uno</p>
+    <p class="subtitle">Nuzlocke · 13 entrenadores · 10 Pokémon cada uno</p>
   </header>
 
   <div class="divider"><span>⚔ PARTICIPANTES ⚔</span></div>
@@ -1011,6 +1019,50 @@
           <p>Entrenador · 0 Pokémon</p>
         </div>
         <span class="progress-pill" style="background:rgba(121,85,72,0.2);border-color:rgba(121,85,72,0.5);color:#A1887F;">0 / 10</span>
+      </div>
+      <div class="slots">
+        <div class="slot">
+          <span class="slot-number">01</span>
+        </div>
+        <div class="slot">
+          <span class="slot-number">02</span>
+        </div>
+        <div class="slot">
+          <span class="slot-number">03</span>
+        </div>
+        <div class="slot">
+          <span class="slot-number">04</span>
+        </div>
+        <div class="slot">
+          <span class="slot-number">05</span>
+        </div>
+        <div class="slot">
+          <span class="slot-number">06</span>
+        </div>
+        <div class="slot">
+          <span class="slot-number">07</span>
+        </div>
+        <div class="slot">
+          <span class="slot-number">08</span>
+        </div>
+        <div class="slot">
+          <span class="slot-number">09</span>
+        </div>
+        <div class="slot">
+          <span class="slot-number">10</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- PARTICIPANTE 13 -->
+    <div class="participant-card" style="border-color:rgba(139,195,74,0.4);">
+      <div class="card-header">
+        <div class="trainer-avatar" style="background: linear-gradient(135deg,#8BC34A,#AED581); font-size:0.55rem;">VAY</div>
+        <div class="trainer-info">
+          <h2>Vaynilo</h2>
+          <p>Entrenador · 0 Pokémon</p>
+        </div>
+        <span class="progress-pill" style="background:rgba(139,195,74,0.2);border-color:rgba(139,195,74,0.5);color:#AED581;">0 / 10</span>
       </div>
       <div class="slots">
         <div class="slot">
