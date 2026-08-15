@@ -980,40 +980,60 @@
         <div class="trainer-avatar" style="background: linear-gradient(135deg,#00BCD4,#4DD0E1); font-size:0.55rem;">BOB</div>
         <div class="trainer-info">
           <h2>Bobal</h2>
-          <p>Entrenador · 0 Pokémon</p>
+          <p>Entrenador · 10 Pokémon</p>
         </div>
-        <span class="progress-pill" style="background:rgba(0,188,212,0.2);border-color:rgba(0,188,212,0.5);color:#4DD0E1;">0 / 10</span>
+        <span class="progress-pill" style="background:rgba(0,188,212,0.2);border-color:rgba(0,188,212,0.5);color:#4DD0E1;">10 / 10</span>
       </div>
       <div class="slots">
-        <div class="slot">
+        <div class="slot filled" data-team="bobal" data-poke="0">
           <span class="slot-number">01</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/malamar.png" alt="Malamar">
+          <span class="poke-name">calamardo</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="bobal" data-poke="1">
           <span class="slot-number">02</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/ragingbolt.png" alt="Raging Bolt">
+          <span class="poke-name">Melenaleteo</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="bobal" data-poke="2">
           <span class="slot-number">03</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/aggron.png" alt="Aggron">
+          <span class="poke-name">Lentejas</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="bobal" data-poke="3">
           <span class="slot-number">04</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/typhlosion.png" alt="Typhlosion">
+          <span class="poke-name">Typhlosion</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="bobal" data-poke="4">
           <span class="slot-number">05</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/raichu.png" alt="Raichu">
+          <span class="poke-name">edurne</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="bobal" data-poke="5">
           <span class="slot-number">06</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/garganacl.png" alt="Garganacl">
+          <span class="poke-name">Canica</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="bobal" data-poke="6">
           <span class="slot-number">07</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/incineroar.png" alt="Incineroar">
+          <span class="poke-name">Ms kitty</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="bobal" data-poke="7">
           <span class="slot-number">08</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/greninja.png" alt="Greninja">
+          <span class="poke-name">mario</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="bobal" data-poke="8">
           <span class="slot-number">09</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/drednaw.png" alt="Drednaw">
+          <span class="poke-name">Turtle</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="bobal" data-poke="9">
           <span class="slot-number">10</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/nihilego.png" alt="Nihilego">
+          <span class="poke-name">medousa</span>
         </div>
       </div>
     </div>
@@ -1963,7 +1983,70 @@
       }
     ];
 
-    var teams = { lordjire: lordjireTeam, samgis: samgisTeam, vaynilo: vayniloTeam, bolushow: bolushowTeam, elnestor: elnestorTeam, fire0707: fire0707Team, nimiel: nimielTeam, visturin: visturinTeam };
+    var bobalTeam = [
+      {
+        nick: "calamardo", species: "Malamar",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/malamar.png",
+        ability: "Respondón", item: "Hierba Única",
+        moves: ["Recuperación", "Cerco Dimensión", "Lluevehojas", "A Bocajarro"]
+      },
+      {
+        nick: "Melenaleteo", species: "Raging Bolt",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/ragingbolt.png",
+        ability: "Iluminación", item: "Banda Focus",
+        moves: ["Luna Roja", "Bola Sombra", "Fuerza Lunar", "Llama Azul"]
+      },
+      {
+        nick: "Lentejas", species: "Aggron",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/aggron.png",
+        ability: "Geofagia", item: "Baya Chople",
+        moves: ["Martillo Colosal", "Triple Flecha", "Recuperación", "Hachazo Pétreo"]
+      },
+      {
+        nick: "Typhlosion", species: "Typhlosion",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/typhlosion.png",
+        ability: "Paleosíntesis", item: "Energía Potenciadora",
+        moves: ["Voto Planta", "Llamarada", "Núcleo Castigo", "Chispazo"]
+      },
+      {
+        nick: "edurne", species: "Raichu",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/raichu.png",
+        ability: "Guardia Metálica", item: "Raichuita Y",
+        moves: ["Joltioparálisis", "Núcleo Castigo", "Llamarada", "Relámpago Súbito"]
+      },
+      {
+        nick: "Canica", species: "Garganacl",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/garganacl.png",
+        ability: "Capa Tóxica", item: "Gema Roca",
+        moves: ["Absorbefuerza", "Al Ataque", "Anulación", "Hachazo Pétreo"]
+      },
+      {
+        nick: "Ms kitty", species: "Incineroar",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/incineroar.png",
+        ability: "Bromista", item: "Gema Siniestra",
+        moves: ["Golpe Oscuro", "Recuperación", "Otra Vez", "Martillo Dragón"]
+      },
+      {
+        nick: "mario", species: "Greninja",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/greninja.png",
+        ability: "Pararrayos", item: "Gema Agua",
+        moves: ["Tierra Viva", "Umbreozona", "Géiser Fotónico", "Salpikasurf"]
+      },
+      {
+        nick: "Turtle", species: "Drednaw",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/drednaw.png",
+        ability: "Energía Pura", item: "Lupa",
+        moves: ["Cambio de Marcha", "Garrote Liana", "Cola de Agua", "Hachazo Pétreo"]
+      },
+      {
+        nick: "medousa", species: "Nihilego",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/nihilego.png",
+        ability: "Compiescolta", item: "Restos",
+        moves: ["Relajo", "Luna Roja", "Umbreozona", "Bomba Ácida"]
+      }
+    ];
+
+    var teams = { lordjire: lordjireTeam, samgis: samgisTeam, vaynilo: vayniloTeam, bolushow: bolushowTeam, elnestor: elnestorTeam, fire0707: fire0707Team, nimiel: nimielTeam, visturin: visturinTeam, bobal: bobalTeam };
 
     var overlay = document.getElementById('pokeModalOverlay');
     var closeBtn = document.getElementById('pokeModalClose');
