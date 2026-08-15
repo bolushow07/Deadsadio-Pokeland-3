@@ -916,40 +916,60 @@
         <div class="trainer-avatar" style="background: linear-gradient(135deg,#FFC107,#FFD54F); font-size:0.55rem;">VIS</div>
         <div class="trainer-info">
           <h2>Visturin</h2>
-          <p>Entrenador · 0 Pokémon</p>
+          <p>Entrenador · 10 Pokémon</p>
         </div>
-        <span class="progress-pill" style="background:rgba(255,193,7,0.2);border-color:rgba(255,193,7,0.5);color:#FFD54F;">0 / 10</span>
+        <span class="progress-pill" style="background:rgba(255,193,7,0.2);border-color:rgba(255,193,7,0.5);color:#FFD54F;">10 / 10</span>
       </div>
       <div class="slots">
-        <div class="slot">
+        <div class="slot filled" data-team="visturin" data-poke="0">
           <span class="slot-number">01</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/slaking.png" alt="Slaking">
+          <span class="poke-name">Magalhaes</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="visturin" data-poke="1">
           <span class="slot-number">02</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/haxorus.png" alt="Haxorus">
+          <span class="poke-name">Hilario José</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="visturin" data-poke="2">
           <span class="slot-number">03</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/decidueye.png" alt="Decidueye">
+          <span class="poke-name">Rashford</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="visturin" data-poke="3">
           <span class="slot-number">04</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/incineroar.png" alt="Incineroar">
+          <span class="poke-name">Pep</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="visturin" data-poke="4">
           <span class="slot-number">05</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/primarina.png" alt="Primarina">
+          <span class="poke-name">Gimena</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="visturin" data-poke="5">
           <span class="slot-number">06</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/blastoise.png" alt="Blastoise">
+          <span class="poke-name">Pachegor</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="visturin" data-poke="6">
           <span class="slot-number">07</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/annihilape.png" alt="Annihilape">
+          <span class="poke-name">Vinicius</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="visturin" data-poke="7">
           <span class="slot-number">08</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/archaludon.png" alt="Archaludon">
+          <span class="poke-name">JM</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="visturin" data-poke="8">
           <span class="slot-number">09</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/garchomp.png" alt="Garchomp">
+          <span class="poke-name">Ferran</span>
         </div>
-        <div class="slot">
+        <div class="slot filled" data-team="visturin" data-poke="9">
           <span class="slot-number">10</span>
+          <img class="poke-sprite" src="https://play.pokemonshowdown.com/sprites/gen5/toxapex.png" alt="Toxapex">
+          <span class="poke-name">Sexo</span>
         </div>
       </div>
     </div>
@@ -1880,7 +1900,70 @@
       }
     ];
 
-    var teams = { lordjire: lordjireTeam, samgis: samgisTeam, vaynilo: vayniloTeam, bolushow: bolushowTeam, elnestor: elnestorTeam, fire0707: fire0707Team, nimiel: nimielTeam };
+    var visturinTeam = [
+      {
+        nick: "Magalhaes", species: "Slaking",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/slaking.png",
+        ability: "Simple", item: "Vida Esfera",
+        moves: ["Feerichoque", "Velocidad Extrema", "Ida y Vuelta", "Danza Espada"]
+      },
+      {
+        nick: "Hilario José", species: "Haxorus",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/haxorus.png",
+        ability: "Ímpetu Tóxico", item: "Toxiesfera",
+        moves: ["Danza Acuática", "Danza Espada", "Vasto Impacto", "Feerichoque"]
+      },
+      {
+        nick: "Rashford", species: "Decidueye",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/decidueye.png",
+        ability: "Filtro", item: "Pañuelo Elección",
+        moves: ["Puntada Sombría", "Leafitobombas", "Mil Flechas", "Tijera X"]
+      },
+      {
+        nick: "Pep", species: "Incineroar",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/incineroar.png",
+        ability: "Cuerpo Vívido", item: "Baya Dorada",
+        moves: ["Golpe Bajo", "Fuego Sagrado", "Sorpresa", "Patada Salto"]
+      },
+      {
+        nick: "Gimena", species: "Primarina",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/primarina.png",
+        ability: "Teracaparazón", item: "Restos",
+        moves: ["Joltioparálisis", "Escaldar", "Fuerza Lunar", "Respiro"]
+      },
+      {
+        nick: "Pachegor", species: "Blastoise",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/blastoise.png",
+        ability: "Antibalas", item: "Seguro Debilidad",
+        moves: ["Cerco Dimensión", "Branquibocado", "Danza Dragón", "Fuego Sagrado"]
+      },
+      {
+        nick: "Vinicius", species: "Annihilape",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/annihilape.png",
+        ability: "Capa Tóxica", item: "Cinta Experta",
+        moves: ["Danza Espada", "Puño Furia", "A Bocajarro", "Golpe Bajo"]
+      },
+      {
+        nick: "JM", species: "Archaludon",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/archaludon.png",
+        ability: "Indefenso", item: "Especs Elección",
+        moves: ["Electrocañón", "Corte Vacío", "Fiebre Dorada", "Vendaval"]
+      },
+      {
+        nick: "Ferran", species: "Garchomp",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/garchomp.png",
+        ability: "Mano Rápida", item: "Cinta Elección",
+        moves: ["Garra Dragón", "Terremoto", "Embate Supremo", "Fuego Sagrado"]
+      },
+      {
+        nick: "Sexo", species: "Toxapex",
+        sprite: "https://play.pokemonshowdown.com/sprites/gen5/toxapex.png",
+        ability: "Punta Acero", item: "Casco Dentado",
+        moves: ["Garra Nociva", "Barrera Espinosa", "Ovocuración", "Púas Tóxicas"]
+      }
+    ];
+
+    var teams = { lordjire: lordjireTeam, samgis: samgisTeam, vaynilo: vayniloTeam, bolushow: bolushowTeam, elnestor: elnestorTeam, fire0707: fire0707Team, nimiel: nimielTeam, visturin: visturinTeam };
 
     var overlay = document.getElementById('pokeModalOverlay');
     var closeBtn = document.getElementById('pokeModalClose');
